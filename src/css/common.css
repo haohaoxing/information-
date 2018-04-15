@@ -1,0 +1,120 @@
+/* 公共样式部分 */
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+    height:100%;
+}
+ol,ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+
+/* 头部 */
+.head{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:88px;
+    background:url(../img/background_top.png) repeat-x center;
+}
+/* logo部分 */
+.logo{
+    width:300px;
+    height:100%;
+    background:url(../img/logo.png) no-repeat center;
+}
+.logo,.nav{
+    float:left;
+}
+/* 导航部分 */
+.nav a{
+    display:block;
+    float:left;
+    width:87px;
+    padding-top:8px;
+    text-align:center;
+    height:80px;
+}
+.nav a img{
+    display:block;
+    margin:0 auto;
+}
+.nav a span{
+    font-size:14px;
+    color:#fff;
+}
+.nav a:hover{
+    background:#2b7fb5;
+}
+
+/* 第二部分 */
+.section{
+    width:100%;
+}
+/* 左边侧边栏部分 */
+.section_left{
+    width:186px;
+    height:100%;
+    overflow: hidden;
+    border-right:1px solid #c6dee6;
+    position:fixed;
+    top:88px;
+}
+/* a的公共样式 */
+.section_left a{
+    display:block;
+    width:100%;
+}
+/* 头部通讯录部分 */
+.sec_title a{
+    height:39px;
+    border-top:1px solid #5ab8ef;
+    background:#4098ca;
+}
+.sec_title img{
+    margin:10px 7px 0 8px;
+}
+.sec_title span{
+    font-size:14px;
+    color:#fff;
+}
+/*一级菜单*/
+.yiJ a{
+    height: 34px;
+    border-bottom:1px solid #b9cad3;
+    font-size:12px;
+    color:#000;
+    background: #d4e7f0;
+}
+.yiJ a img{
+    margin-left:13px;
+    margin-right:8px;
+}
+.yiJ a span{
+    display: inline-block;
+    line-height: 34px;
+    font-weight: 900;
+}
+
+.erJ{
+    display: none;
+}
+.erJ a{
+    line-height:30px;
+    text-indent:42px ;
+    background:#f0f9fd url(../img/sec_icon_1.png) no-repeat  32px 11px;
+    border-left:3px solid #f0f9fd;
+    border-bottom: none;
+}
+.erJ a:hover{
+    color:#00a4ac;
+}

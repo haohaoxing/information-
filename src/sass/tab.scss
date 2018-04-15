@@ -1,0 +1,309 @@
+body, div, p, ul, ol, li, dl, dt, dd, form, table, tr, td, hr, h1, h2, h3, h4, h5, h6, img, input, fieldset {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+// header部分
+.header{
+	width: 100%;
+	height:88px;
+    background: #066cac;
+    position: fixed;
+}
+// slide部分 
+section{
+    padding-top:88px;
+    // padding-left:120px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+
+}
+.slide{
+    width: 188px;
+    background: #d4e7f0;
+    height:100%; 
+    position: fixed;
+     left:0;
+     top:88px;
+}
+// content部分
+.content{
+    flex: 1;
+    margin-left:186px;
+    height:100%;
+    background:white;
+    .content-title{
+
+        height:39px;
+        width: 100%;
+        padding-left: 18px;
+        background:#edf6fa;
+        border-bottom: 1px solid #d7e4ea;
+        a{
+            line-height: 39px;
+            color:#000;
+            font-size: 14px;
+            padding-left:6px;
+        }
+        span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: url(../img/left.png)no-repeat 5px 1px;
+            margin-left: 4px;
+        }
+    }
+    .content-main{
+    //    height:998px;
+        margin-top: 15px;
+       background:white;
+       padding-left:14px;
+       .tab-menu{
+           height: 36px;
+           background:white;
+            margin-top:10px;
+           border-bottom: 1px solid #d3dbde;
+           .active{
+                display:block;
+                background: #fff;
+                border-left: 1px solid #ccc;
+                border-top: 3px solid #66c9f3;
+                border-right: 1px solid #ccc;
+                border-bottom:none;
+           }
+           
+           a{
+               display: block;
+               float:left;
+               width: 107px;
+               height: 37px;
+               text-align: center;
+               line-height:37px;
+               background: #f3f7f8;
+               border-left:1px solid #d3dbde;
+               border-bottom:1px solid #d3dbde; 
+               color:#000;
+               
+              
+           }
+           .publish{
+            border-right:1px solid #d3dbde;
+           }
+       }
+    //    选显卡内容部分
+       .tab-content{
+        
+        margin-top:61px;
+        // display:none;
+        // background:pink;
+        .bus{
+            height:33px; 
+            // background: red;
+                span{
+                    margin-left:22px;
+                    color:#000;
+                    font-size:14px;
+                }
+            input{
+                width:518px;
+                height:33px;
+                border:1px solid #ced9df;
+                margin-left: 15px;
+                margin-top:4px;
+                outline: none;
+            }
+        }
+        // 职位
+        .vocation{
+            height: 33px;
+                span{
+                    margin-left:22px;
+                    color:#000;
+                    font-size:14px;
+                }
+                select{
+                    width: 343px;
+                    height: 33px;
+                    border:1px solid #ced9df;
+                    margin-left:9px;
+                    margin-top:14px;
+                    outline: none;
+
+
+                }
+        }
+        // 薪资
+        .salaryn{
+            height: 33px;
+            margin-top:24px;
+                span{
+                    margin-left:22px;
+                    color:#000;
+                    font-size:14px;
+                }
+                select{
+                    width: 343px;
+                    height: 33px;
+                    border:1px solid #ced9df;
+                    margin-left: 9px;
+                    outline: none;
+
+
+                 }
+        }
+        // 工作地点
+        .work{
+            height: 33px;
+            margin-top:10px;
+                span{
+                    margin-left:22px;
+                    color:#000;
+                    font-size:14px;
+                }
+                select{
+                    width: 167px;
+                    height: 33px;
+                    border:1px solid #ced9df;
+                    margin-left: 9px;
+                    outline: none;
+
+
+                 }
+                 .city{
+                     margin-left:5px;
+                     }
+        }
+        // 通知内容
+        .area{
+                height:190px;
+                margin-top:10px;
+                span{
+                 margin-top:10px;
+                 margin-left:22px;
+                 color:#000;
+                 font-size:14px;
+                }
+                .con-text{
+                    margin-left:105px;
+                    textarea{
+                        margin-top:-19px;
+                    }
+                    a{
+                        width:138px;
+                        height: 34px;
+                        background:#3994c7;
+                        color:white;
+                        font-size:14px;
+                        display:block;
+                        border-radius:5px;
+                        text-align: center;
+                        line-height: 34px;
+                    }
+                }
+                
+        }
+
+
+
+    }
+    }
+   
+}
+// 选显卡第二部分
+.second{
+    margin-top:61px;
+    display:none;
+    // background: pink;
+    padding-left:14px;
+    padding-right: 8px;
+    // position: absolute;
+    // top: 219px;
+    .check{
+        width:100%;
+        height: 61px;
+        color:#000000;
+        font-size: 14px;
+        line-height:60px;
+        input{
+            width: 151px;
+            height: 33px;
+            outline: none;
+            border:1px solid #bbc7cd;
+            margin-left:4px;
+        }
+        .watch{
+            width:85px;
+            height: 35px;
+            background:#3692c6;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .tablelist{
+        border: solid 1px #cbcbcb;
+        width: 100%;
+        clear: both;
+        // margin-left:16px;
+        margin-top: 10px;
+    }
+    table{
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .tablelist thead tr{
+        background:#f0f5f7 ;
+    }
+    .tablelist tr{
+        font-size:14px;
+       
+
+    }
+    tbody tr{
+        color:#000000;
+        &:nth-child(even){
+            background: #f2f6f8;
+        }
+        &:hover{
+            background: #f2f6f8;
+        }
+    }
+
+    .tablelist th{
+        background: url(../images/th.gif) repeat-x;
+        height: 34px;
+        line-height: 34px;
+        border-bottom: solid 1px #b6cad2;
+        text-indent: 11px;
+        text-align: left;
+    }
+    .tablelist td{
+        line-height: 35px;
+        text-indent: 11px;
+        border-right: dotted 1px #c7c7c7;
+
+    }
+    td{
+        display: table-cell;
+        vertical-align: inherit;
+    }
+    tbody td a{
+        color:#5082c8;
+    } 
+}
+.change{
+    display:none;
+}
+.frist{
+    display:block;
+}
+
